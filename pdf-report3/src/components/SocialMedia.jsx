@@ -53,6 +53,7 @@ const SocialMedia = () => (
       <Text style={{ marginTop: 10, fontWeight: "bold" }}>
         Total: 09m 37s
       </Text>
+      
     </Page>
   </Document>
 );

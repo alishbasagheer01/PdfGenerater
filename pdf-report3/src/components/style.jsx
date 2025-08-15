@@ -38,6 +38,9 @@ const style = StyleSheet.create({
     color: "blue",
     textDecoration: "underline",
   },
+  footer:{
+    
+  }
 });
 
 export default style;
