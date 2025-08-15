@@ -1,12 +1,9 @@
-import React from "react";
 import { Document, Page, Text, View, Image } from "@react-pdf/renderer";
-import ChatStyle from "./ChatStyle";
+import ChatStyle from "./ChatStyle"
 import chatIcon from "../assets/chat.png";
-
-
-const ChatsReport = () => {
+const HostingReport = () => {
     const data = [
-        { user: 'premier', activeTime: '39m 06s', hits: 81 }
+        { user: 'premier', activeTime: '03m 13s', hits: 81 }
     ];
 
     return (
@@ -28,15 +25,15 @@ const ChatsReport = () => {
 
                         <Image style={ChatStyle.icon} src={chatIcon} />
 
-                        <Text style={ChatStyle.title}>Chats</Text>
+                        <Text style={ChatStyle.title}>Image and Video Hosting</Text>
                     </View>
                     <Text style={ChatStyle.date}>Date: 08/12/2025</Text>
                 </View>
 
                 {/* Stats */}
                 <View style={ChatStyle.statsRow}>
-                    <Text style={ChatStyle.stat}>Total Hits: 81</Text>
-                    <Text style={ChatStyle.stat}>Total Time: 39m 06s</Text>
+                    <Text style={ChatStyle.stat}>Total Hits: 8</Text>
+                    <Text style={ChatStyle.stat}>Total Time: 03m 13s</Text>
                 </View>
                 </View>
 
@@ -55,7 +52,6 @@ const ChatsReport = () => {
                         </View>
                     ))}
                 </View>
-               
                 <View style={ChatStyle.footer}>
                     <Text>
                         Copyright © Etor-Networks BrowseReporter
@@ -63,11 +59,9 @@ const ChatsReport = () => {
 
 
                 </View>
-
-            </Page>
-        </Document>
-    );
-};
-
-export default ChatsReport;
-
+                </Page>
+                        </Document>
+                    );
+                };
+                
+                export default HostingReport;

@@ -16,8 +16,8 @@ const style = StyleSheet.create({
   },
   col1: { width: "40%" }, // URL
   col2: { width: "20%" }, // Start Date
-  col3: { width: "20%",paddingLeft:10 }, // Active Time
-  col4: { width: "20%" }, // Total Time
+  col3: { width: "20%",paddingLeft:40}, // Active Time
+  col4: { width: "20%" ,paddingLeft:40}, // Total Time
 
   tableCell: {
     padding: 4,

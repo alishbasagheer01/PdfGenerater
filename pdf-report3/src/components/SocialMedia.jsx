@@ -50,7 +50,7 @@ const SocialMedia = () => (
       ))}
 
       {/* Total */}
-      <Text style={{ marginTop: 10, fontWeight: "bold" , display:"flex",alignItems:"flex-end",justifyContent:"flex-end"}}>
+      <Text style={{ marginTop: 10, fontWeight: "bold" }}>
         Total: 09m 37s
       </Text>
     </Page>
