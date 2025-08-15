@@ -4,7 +4,7 @@ import style from "./style"
 import chatIcon from "../assets/chat.png";
 // unstage
 // stage
-// comm
+// commit
 const ReportDocument2 = () => {
     const data = [
         { user: 'premier', activeTime: '39m 06s', hits: 81 }
