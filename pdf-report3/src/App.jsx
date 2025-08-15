@@ -12,7 +12,7 @@ export default function App() {
         fileName="daily_report.pdf"
         style={{
           padding: "10px 20px",
-          backgroundColor: "#4CAF50",
+          backgroundColor: "#4CAF50", 
           color: "#fff",
           textDecoration: "none",
           borderRadius: "5px",
