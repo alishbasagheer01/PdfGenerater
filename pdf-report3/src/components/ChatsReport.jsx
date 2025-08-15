@@ -5,7 +5,7 @@ import chatIcon from "../assets/chat.png";
 // unstage
 // stage
 // commit
-const ReportDocument2 = () => {
+const ChatsReport = () => {
     const data = [
         { user: 'premier', activeTime: '39m 06s', hits: 81 }
     ];
@@ -177,5 +177,5 @@ const ReportDocument2 = () => {
     );
 };
 
-export default ReportDocument2;
+export default ChatsReport;
 

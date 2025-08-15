@@ -14,7 +14,7 @@ const data = [
   { url: "youtube.com", startDate: "08/12/2025 - 08:52 PM", activeTime: "02s", totalTime: "02s" },
 ];
 
-const ReportDocument = () => (
+const SocialMedia = () => (
   <Document>
     <Page size="A4" style={style.page}>
       <Text style={{ fontSize: 14, marginBottom: 10 }}>
@@ -57,4 +57,4 @@ const ReportDocument = () => (
   </Document>
 );
 
-export default ReportDocument;
+export default SocialMedia;
