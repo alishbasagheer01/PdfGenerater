@@ -27,7 +27,7 @@ const ChatsReport = () => {
                     <View style={style.headerLeft}>
 
 
-                        <Image style={style.icon} src={chatIcon} />
+                        <Image style={style.icon} src={`${window.location.origin}/chat.png`} />
 
                         <Text style={style.title}>Chats</Text>
                     </View>
@@ -56,114 +56,8 @@ const ChatsReport = () => {
                         </View>
                     ))}
                 </View>
-                <View style={style.second}>
-                <View style={style.head}>
-                <View style={style.headerRow}>
-                    <View style={style.headerLeft}>
-
-
-                        <Image style={style.icon} src={chatIcon} />
-
-                        <Text style={style.title}>Image and Video Hosting</Text>
-                    </View>
-                    <Text style={style.date}>Date: 08/12/2025</Text>
-                </View>
-
-                {/* Stats */}
-                <View style={style.statsRow}>
-                    <Text style={style.stat}>Total Hits: 8</Text>
-                    <Text style={style.stat}>Total Time: 03m 13s</Text>
-                </View>
-                </View>
-
-                {/* Table */}
-                <View style={style.table}>
-                    <View style={style.tableHeader}>
-                        <Text style={[style.cell, { flex: 2 }]}>User</Text>
-                        <Text style={style.cell}>Active Time</Text>
-                        <Text style={style.cell}>Hits</Text>
-                    </View>
-                    {data.map((row, i) => (
-                        <View style={style.tableRow} key={i}>
-                            <Text style={[style.cell, { flex: 2, color: 'blue', textDecoration: 'underline' }]}>{row.user}</Text>
-                            <Text style={style.cell}>{row.activeTime}</Text>
-                            <Text style={style.cell}>{row.hits}</Text>
-                        </View>
-                    ))}
-                </View>
-                </View>
-                <View style={style.third}>
-                <View style={style.head}>
-                <View style={style.headerRow}>
-                    <View style={style.headerLeft}>
-
-
-                        <Image style={style.icon} src={chatIcon} />
-
-                        <Text style={style.title}>Online video and audio</Text>
-                    </View>
-                    <Text style={style.date}>Date: 08/12/2025</Text>
-                </View>
-
-                {/* Stats */}
-                <View style={style.statsRow}>
-                    <Text style={style.stat}>Total Hits: 6</Text>
-                    <Text style={style.stat}>Total Time: 03m 08s</Text>
-                </View>
-                </View>
-
-                {/* Table */}
-                <View style={style.table}>
-                    <View style={style.tableHeader}>
-                        <Text style={[style.cell, { flex: 2 }]}>User</Text>
-                        <Text style={style.cell}>Active Time</Text>
-                        <Text style={style.cell}>Hits</Text>
-                    </View>
-                    {data.map((row, i) => (
-                        <View style={style.tableRow} key={i}>
-                            <Text style={[style.cell, { flex: 2, color: 'blue', textDecoration: 'underline' }]}>{row.user}</Text>
-                            <Text style={style.cell}>{row.activeTime}</Text>
-                            <Text style={style.cell}>{row.hits}</Text>
-                        </View>
-                    ))}
-                </View>
-                </View>
-                <View style={style.forth}>
-                <View style={style.head}>
-                <View style={style.headerRow}>
-                    <View style={style.headerLeft}>
-
-
-                        <Image style={style.icon} src={chatIcon} />
-
-                        <Text style={style.title}>Social Networks</Text>
-                    </View>
-                    <Text style={style.date}>Date: 08/12/2025</Text>
-                </View>
-
-                {/* Stats */}
-                <View style={style.statsRow}>
-                    <Text style={style.stat}>Total Hits: 8</Text>
-                    <Text style={style.stat}>Total Time: 03m 16s</Text>
-                </View>
-                </View>
-
-                {/* Table */}
-                <View style={style.table}>
-                    <View style={style.tableHeader}>
-                        <Text style={[style.cell, { flex: 2 }]}>User</Text>
-                        <Text style={style.cell}>Active Time</Text>
-                        <Text style={style.cell}>Hits</Text>
-                    </View>
-                    {data.map((row, i) => (
-                        <View style={style.tableRow} key={i}>
-                            <Text style={[style.cell, { flex: 2, color: 'blue', textDecoration: 'underline' }]}>{row.user}</Text>
-                            <Text style={style.cell}>{row.activeTime}</Text>
-                            <Text style={style.cell}>{row.hits}</Text>
-                        </View>
-                    ))}
-                </View>
-                </View>
+                
+                
                 <View style={style.footer}>
                     <Text>
                         Copyright © Etor-Networks BrowseReporter
