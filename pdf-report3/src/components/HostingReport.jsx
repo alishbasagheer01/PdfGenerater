@@ -52,13 +52,7 @@ const HostingReport = () => {
                         </View>
                     ))}
                 </View>
-                <View style={ChatStyle.footer}>
-                    <Text>
-                        Copyright © Etor-Networks BrowseReporter
-                    </Text>
-
-
-                </View>
+                
                 </Page>
                         </Document>
                     );
