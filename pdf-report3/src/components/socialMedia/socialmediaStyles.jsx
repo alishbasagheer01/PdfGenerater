@@ -35,24 +35,48 @@ const style = StyleSheet.create({
        flexDirection:"row",
        justifyContent:"space-between"
     },
-    
-    name: {
-      // paddingLeft:10,
-      paddingTop:10,
-        fontSize: 16,
-        fontWeight: 'bold'
-    },
-    date: {
-        fontSize: 12,
-        color: 'grey',
-        paddingRight:"5",
-        paddingTop:10
-    },
-    bottom:{
-      marginTop:10,
-      paddingLeft:10
-    },
-    
+    titlebar: {
+    flexDirection: "column",
+    height: 70,
+    backgroundColor: "#A6AEBF",
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+  },
+  titlemain: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  leftSection: {
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  leftSection1:{
+    display:"flex",
+    flexDirection:"row",
+  },
+  userIcon: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    marginRight: 8,
+    paddingTop:7
+  },
+  name: {
+    fontSize: 16,
+    fontWeight: "bold",
+    paddingTop:10,
+    paddingLeft:10
+  },
+  date: {
+    fontSize: 12,
+    color: "#000",
+  },
+  bottom: {
+    marginTop: 10,
+    paddingLeft: 10,
+  },
+
   table: {
     width: "100%",
     borderWidth: 0,
@@ -64,8 +88,8 @@ const style = StyleSheet.create({
   },
   col1: { width: "40%" }, // URL
   col2: { width: "28%",paddingLeft:10,display:"flex",textAlign:"center" }, // Start Date
-  col3: { width: "20%",paddingLeft:40,display:"flex",textAlign:"center"}, // Active Time
-  col4: { width: "20%" ,paddingLeft:40,display:"flex",textAlign:"center"}, // Total Time
+  col3: { width: "20%",paddingLeft:40,display:"flex",textAlign:"left"}, // Active Time
+  col4: { width: "20%" ,paddingLeft:40,display:"flex",textAlign:"left"}, // Total Time
 
   tableCell: {
     padding: 4,

@@ -41,17 +41,29 @@ const HostingReport = () => {
                 <View style={ChatStyle.table}>
                     <View style={ChatStyle.tableHeader}>
                         <Text style={[ChatStyle.cell, { flex: 2 }]}>User</Text>
-                        <Text style={ChatStyle.cell}>Active Time</Text>
-                        <Text style={ChatStyle.cell}>Hits</Text>
+                        <Text style={{marginLeft:50,fontSize:12,paddingTop:5,}}>Active Time</Text>
+                        <Text style={{marginLeft:50,paddingRight:10,fontSize:12,paddingTop:5,}}>Hits</Text>
                     </View>
                     {data.map((row, i) => (
                         <View style={ChatStyle.tableRow} key={i}>
-                            <Text style={[ChatStyle.cell, { flex: 2, color: 'blue', textDecoration: 'underline' }]}>{row.user}</Text>
-                            <Text style={ChatStyle.cell}>{row.activeTime}</Text>
-                            <Text style={ChatStyle.cell}>{row.hits}</Text>
+                            <Text style={[ChatStyle.cell, { flex: 2, color: 'blue', }]}>{row.user}</Text>
+                            <Text style={{marginRight:15,fontWeight:10,fontSize:12,paddingTop:5,}}>{row.activeTime}</Text>
+                            <Text style={{marginLeft:50,paddingRight:10,fontWeight:10,fontSize:12,paddingTop:5,}}>{row.hits}</Text>
                         </View>
                     ))}
                 </View>
+                 <View style={{display:"flex",
+               justifyContent:"center",
+               alignItems:"center",
+               marginTop:600,
+               color:"#9CAFAA",
+               fontSize:"12"}}>
+                           <Text>
+                               Copyright © Etor-Networks BrowseReporter
+                           </Text>
+       
+       
+                       </View>
                 
                 </Page>
                         </Document>
