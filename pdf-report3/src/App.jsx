@@ -11,29 +11,31 @@ import GroupReport from "./components/groupReport/GroupReport";
 import PremierReport from "./components/premierReport/PremierReport";
 import URLCategories from "./components/URL-categories/URLCategories";
 import Events from "./components/logon&logoffevents/Events";
+import AppUsageReport from "./components/appusageReport/AppUsageReport";
+import UsersReport from "./components/usersReport/UsersReport";
+import DomainsReport from "./components/domainsReport/DomainsReport";
+import SitesReport from "./components/sitesReport/SitesReport";
+import KeywordsReport from "./components/keywordsReport/KeywordsReport";
+import Keywords2Report from "./components/keywords2Report/Keywords2Report";
 
 export default function App() {
   return (
     <div>
-    <div >
-      <div style={{height:"100vh"}}>
-
-      <h1>Download Chats Report</h1>
-       <PDFViewer width="100%" height="90%">
-        <ChatsReport />
-      </PDFViewer>
-      </div>
-      
+    <div>
+      <PDFDownloadLink 
+        document={<ChatsReport />} 
+        fileName="group_report.pdf"
+      >
+        {({ loading }) => (loading ? "Loading..." : "Download PDF")}
+      </PDFDownloadLink>
     </div>
-    <div >
-      <div style={{height:"100vh"}}>
-
-      <h1>Download Media Hosting Report</h1>
-       <PDFViewer width="100%" height="90%">
-        <HostingReport />
-      </PDFViewer>
-      </div>
-      
+    <div>
+      <PDFDownloadLink 
+        document={<HostingReport />} 
+        fileName="group_report.pdf"
+      >
+        {({ loading }) => (loading ? "Loading..." : "Download PDF")}
+      </PDFDownloadLink>
     </div>
     <div >
       <div style={{height:"100vh"}}>
@@ -65,15 +67,17 @@ export default function App() {
       </div>
       
     </div>
-    <div >
+    <div>
       <div style={{height:"100vh"}}>
+        <h2>Group Report</h2>
 
-      <h1>Download Group Report</h1>
-       <PDFViewer width="100%" height="90%">
-        <GroupReport />
-      </PDFViewer>
+      <PDFDownloadLink 
+        document={<GroupReport />} 
+        fileName="report.pdf"
+      >
+        {({ loading }) => (loading ? "Loading..." : "Download PDF")}
+      </PDFDownloadLink>
       </div>
-      
     </div>
     <div >
       <div style={{height:"100vh"}}>
@@ -105,6 +109,78 @@ export default function App() {
       </div>
       
     </div>
+     <div>
+      <div style={{height:"100vh"}}>
+        <h2>App Usage Report</h2>
+
+      <PDFDownloadLink 
+        document={<AppUsageReport />} 
+        fileName="report.pdf"
+      >
+        {({ loading }) => (loading ? "Loading..." : "Download PDF")}
+      </PDFDownloadLink>
+      </div>
+    </div>
+    <div>
+      <div style={{height:"100vh"}}>
+        <h2>Users Report</h2>
+
+      <PDFDownloadLink 
+        document={<UsersReport />} 
+        fileName="report.pdf"
+      >
+        {({ loading }) => (loading ? "Loading..." : "Download PDF")}
+      </PDFDownloadLink>
+      </div>
+    </div>
+    <div>
+      <div style={{height:"100vh"}}>
+        <h2>Domains Report</h2>
+
+      <PDFDownloadLink 
+        document={<DomainsReport />} 
+        fileName="report.pdf"
+      >
+        {({ loading }) => (loading ? "Loading..." : "Download PDF")}
+      </PDFDownloadLink>
+      </div>
+    </div>
+    <div>
+      <div style={{height:"100vh"}}>
+        <h2>Sites Report</h2>
+
+      <PDFDownloadLink 
+        document={<SitesReport />} 
+        fileName="report.pdf"
+      >
+        {({ loading }) => (loading ? "Loading..." : "Download PDF")}
+      </PDFDownloadLink>
+      </div>
+    </div>
+    <div>
+      <div style={{height:"100vh"}}>
+        <h2>Keywords Report</h2>
+
+      <PDFDownloadLink 
+        document={<KeywordsReport />} 
+        fileName="report.pdf"
+      >
+        {({ loading }) => (loading ? "Loading..." : "Download PDF")}
+      </PDFDownloadLink>
+      </div>
+    </div>
+<div>
+  <div style={{height:"100vh"}}>
+  <h2>Keywords Report2</h2>
+      <PDFDownloadLink 
+        document={<Keywords2Report />} 
+        fileName="report.pdf"
+      >
+        {({ loading }) => (loading ? "Loading..." : "Download PDF")}
+      </PDFDownloadLink>
+      </div>
+    </div>
+
 
 
     </div>

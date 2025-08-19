@@ -6,14 +6,14 @@ import chatIcon from "../../assets/chat.png";
 
 const GroupReport = () => {
     const data = [
-        { user: 'Users', activeTime: '6h 02m 46s', totaltime: '6h 02m 46s' }
+        { user: 'Users', activeTime: '05h 43m 35s', totaltime: '05h 43m 35s' }
     ];
 
     return (
         <Document>
             <Page size="A4" style={ChatStyle.page}>
                 <View style={ChatStyle.navbar}>
-                    <Text style={ChatStyle.leftcont}>Top 10 Categories by Browsing Time9User0</Text>
+                    <Text style={ChatStyle.leftcont}>Top 10 Domains by Browsing Time (Users)</Text>
                     <View style={ChatStyle.rightcont}>
                         <Text style={ChatStyle.rightcont1}>Browse</Text>
                         <Text style={ChatStyle.rightcont2}>Reporter</Text>
@@ -39,13 +39,13 @@ const GroupReport = () => {
                 {/* Table */}
                 <View style={ChatStyle.table}>
                     <View style={ChatStyle.tableHeader}>
-                        <Text style={[ChatStyle.cell, { flex: 2 }]}>Groups</Text>
+                        <Text style={[ChatStyle.cell, { flex: 2 }]}>Group</Text>
                         <Text style={ChatStyle.cell}>Active Time</Text>
                         <Text style={ChatStyle.cell}>Total Time</Text>
                     </View>
                     {data.map((row, i) => (
                         <View style={ChatStyle.tableRow} key={i}>
-                            <Text style={[ChatStyle.cell, { flex: 2, textDecoration: 'underline' }]}>{row.user}</Text>
+                            <Text style={[ChatStyle.cell, { flex: 2 }]}>{row.user}</Text>
                             <Text style={ChatStyle.cell}>{row.activeTime}</Text>
                             <Text style={ChatStyle.cell}>{row.totaltime}</Text>
                         </View>
@@ -53,8 +53,8 @@ const GroupReport = () => {
                 </View>
                  <View style={{display:"flex",flexDirection:"row", marginTop: 10,fontSize:10,fontWeight:"bold"}}>
                        <Text style={{marginLeft:230}}>Total:</Text>
-                       <Text style={{marginLeft:80}}>06h 02m 46s</Text>
-                        <Text style={{marginLeft:80}}>06h 02m 46s</Text>
+                       <Text style={{marginLeft:80}}>05h 43m 35s</Text>
+                        <Text style={{marginLeft:80}}>05h 43m 35s</Text>
                       </View>
                 <View style={{
                     display: "flex",
