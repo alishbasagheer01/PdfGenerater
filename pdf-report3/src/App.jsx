@@ -17,6 +17,10 @@ import DomainsReport from "./components/domainsReport/DomainsReport";
 import SitesReport from "./components/sitesReport/SitesReport";
 import KeywordsReport from "./components/keywordsReport/KeywordsReport";
 import Keywords2Report from "./components/keywords2Report/Keywords2Report";
+import ProductivityReport from "./components/productivityReport/ProductivityReport";
+import HourlyReport from "./components/hourlyReport/HourlyReport";
+import WeeklyActiveBrowsingTime from "./components/weeklyactivebrowsingtime/WeeklyActiveBrowsingTime";
+
 
 export default function App() {
   return (
@@ -179,6 +183,38 @@ export default function App() {
         {({ loading }) => (loading ? "Loading..." : "Download PDF")}
       </PDFDownloadLink>
       </div>
+    </div>
+<div>
+  <div style={{height:"100vh"}}>
+  <h2>Productivity Report</h2>
+      <PDFDownloadLink 
+        document={<ProductivityReport/>} 
+        fileName="report.pdf"
+      >
+        {({ loading }) => (loading ? "Loading..." : "Download PDF")}
+      </PDFDownloadLink>
+      </div>
+    </div>
+    <div>
+  <div style={{height:"100vh"}}>
+  <h2>Hourly Browsing Report</h2>
+      <PDFDownloadLink 
+        document={<HourlyReport/>} 
+        fileName="report.pdf"
+      >
+        {({ loading }) => (loading ? "Loading..." : "Download PDF")}
+      </PDFDownloadLink>
+      </div>
+    </div>
+    <div >
+      <div style={{height:"100vh"}}>
+
+      <h1>Weekly Active Browsing Time Report</h1>
+       <PDFViewer width="100%" height="90%">
+        <WeeklyActiveBrowsingTime />
+      </PDFViewer>
+      </div>
+      
     </div>
 
 
