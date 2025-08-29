@@ -1,6 +1,6 @@
 
 import { Document, Page, Text, View,Image, Link } from "@react-pdf/renderer";
-import chatIcon from "../../assets/chat.png";
+
 import style from "./keywordsStyles";
 
 const data = [

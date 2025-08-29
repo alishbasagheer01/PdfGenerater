@@ -22,10 +22,13 @@ const style = StyleSheet.create({
         color: "green"
     },
   header: {
+    height:70,
     flexDirection: "row",
     justifyContent: "space-between",
     marginBottom: 10,
     alignItems: "center",
+   backgroundColor: "#f2f2f2",
+    
   },
   title: {
     fontSize: 14,
@@ -33,6 +36,7 @@ const style = StyleSheet.create({
   },
   date: {
     fontSize: 10,
+    paddingRight:10
   },
   table: {
     display: "table",
@@ -58,15 +62,15 @@ const style = StyleSheet.create({
     backgroundColor: "#f2f2f2",
   },
   // Column widths matching screenshot
-  colUser: { width: "8%",justifyContent:"center",alignItems:"center",textAlign:"center",paddingTop:10 },
-  colDate: { width: "8%",justifyContent:"center",alignItems:"center",textAlign:"center",paddingTop:10 },
-  colTotal: { width: "12%" ,justifyContent:"center",alignItems:"center",textAlign:"center",paddingTop:10 },
-  colActive: { width: "13%",justifyContent:"center",alignItems:"center",textAlign:"center",paddingTop:10  },
-  colActivePct: { width: "8%",paddingTop:10  },
-  colIdle: { width: "10%",paddingTop:10  },
-  colIdlePct: { width: "8%",paddingTop:10  },
-  colComputer: { width: "13%" },
-  colLogin: { width: "11%" },
-  colLogoff: { width: "15%" },
+  colUser: { width: "12%",justifyContent:"center",alignItems:"center",textAlign:"left",paddingTop:10 },
+  colDate: { width: "10%",justifyContent:"center",alignItems:"center",textAlign:"left",paddingTop:10 },
+  colTotal: { width: "15%" ,justifyContent:"center",alignItems:"center",textAlign:"center",paddingTop:10 },
+  colActive: { width: "15%",justifyContent:"center",alignItems:"center",textAlign:"center",paddingTop:10  },
+  colActivePct: { width: "13%",paddingTop:10  },
+  colIdle: { width: "13%",paddingTop:10  },
+  colIdlePct: { width: "10%",paddingTop:10  },
+  colComputer: { width: "13%",paddingTop:10  ,justifyContent:"center",alignItems:"center",textAlign:"left"},
+  colLogin: { width: "15%",paddingTop:10 ,justifyContent:"center",alignItems:"center",textAlign:"left" },
+  colLogoff: { width: "23%",paddingTop:10 ,justifyContent:"center",alignItems:"center",textAlign:"left" },
 });
 export default style;

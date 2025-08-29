@@ -8,89 +8,42 @@ import chatIcon from "../../assets/chat.png";
 // Sample data
 const data = [
   {
-    user: "premier",
-    date: "Aug 12",
-    total: "08h 26m 48s",
-    activeTime: "08h 13m 47s",
-    activePct: "97.43%",
-    idleTime: "13m 01s",
-    idlePct: "2.57%",
+    user: "al rehman laptop",
+    date: "Aug 27",
+    total: "04h 31m 00s",
+    activeTime: "04h 28m 44s",
+    activePct: "99.16%",
+    idleTime: "02m 16s",
+    idlePct: "0.84%",
     computer: "",
     login: "",
     logoff: "",
   },
   {
-    user: "premier",
-    date: "Aug 12",
+    user: "al rehman laptop",
+    date: "Aug 27",
     total: "",
     activeTime: "",
     activePct: "",
     idleTime: "",
     idlePct: "",
-    computer: "DESKTOP-K3KVLFU",
-    login: "8/12/2025 9:29:18 AM",
-    logoff: "8/12/2025 9:40:04 AM",
+    computer: "ZAIGUM",
+    login: "8/27/2025 12:25:44 PM",
+    logoff: "8/27/2025 3:05:32 PM",
   },
   {
-    user: "premier",
-    date: "Aug 12",
+    user: "al rehman laptop",
+    date: "Aug 27",
     total: "",
     activeTime: "",
     activePct: "",
     idleTime: "",
     idlePct: "",
-    computer: "DESKTOP-K3KVLFU",
-    login: "8/12/2025 9:42:51 AM",
-    logoff: "8/12/2025 10:45:12 AM",
+    computer: "ZAIGUM",
+    login: "8/27/2025 3:24:06 PM",
+    logoff: "8/27/2025 4:28:21 PM(Last Connected)",
   },
-  {
-    user: "premier",
-    date: "Aug 12",
-    total: "",
-    activeTime: "",
-    activePct: "",
-    idleTime: "",
-    idlePct: "",
-    computer: "DESKTOP-K3KVLFU",
-    login: "8/12/2025 1:33:32 PM",
-    logoff: "8/12/2025 6:18:18 PM",
-  },
-  {
-    user: "premier",
-    date: "Aug 12",
-    total: "",
-    activeTime: "",
-    activePct: "",
-    idleTime: "",
-    idlePct: "",
-    computer: "DESKTOP-K3KVLFU",
-    login: "8/12/2025 6:22:57 PM",
-    logoff: "8/12/2025 6:36:46 PM",
-  },
-  {
-    user: "premier",
-    date: "Aug 12",
-    total: "",
-    activeTime: "",
-    activePct: "",
-    idleTime: "",
-    idlePct: "",
-    computer: "DESKTOP-K3KVLFU",
-    login: "8/12/2025 6:38:58 PM",
-    logoff: "8/12/2025 8:08:36 PM ",
-  },
-  {
-    user: "premier",
-    date: "Aug 12",
-    total: "",
-    activeTime: "",
-    activePct: "",
-    idleTime: "",
-    idlePct: "",
-    computer: "DESKTOP-K3KVLFU",
-    login: "8/12/2025 8:11:10 PM",
-    logoff: "8/12/2025 9:10:14 PM (Last Connected)",
-  },
+  
 ];
 
 
@@ -112,7 +65,7 @@ const Events = () => (
             Active & Idle time with Logon & Logoff events
           </Text>
         </View>
-        <Text style={style.date}>Date: 08/12/2025</Text>
+        <Text style={style.date}>Date: 08/27/2025</Text>
       </View>
 
       {/* Table */}
@@ -149,6 +102,19 @@ const Events = () => (
           </View>
         ))}
       </View>
+       <View style={{display:"flex",
+               justifyContent:"center",
+               alignItems:"center",
+               marginTop:530,
+               color:"#9CAFAA",
+               fontSize:"12"}}>
+                           <Text>
+                               Copyright © Etor-Networks BrowseReporter
+                           </Text>
+       
+       
+                       </View>
+                      
     </Page>
   </Document>
 );
